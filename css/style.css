@@ -1,0 +1,32 @@
+:root {
+	--clr-primary: #038C7F;
+	--clr-dark: #027373;
+	--clr-wash-green: #A9D9D0;
+	--clr-off-white: #F2E7DC;
+	--clr-off-black: #0D0D0D;
+}
+
+body {
+	background-color: var(--clr-wash-green);
+}
+
+#search {
+	background-color: var(--clr-off-white);
+	padding: .2rem 1rem;
+	border: none;
+	border-radius: 3rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+#input-search {
+	width: 90%;
+	background-color: transparent;
+	border: none;
+	padding: .2rem;
+	outline: none;
+}
+#search button {
+	border: none;
+	background-color: transparent;;
+}
