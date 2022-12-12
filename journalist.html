@@ -104,13 +104,13 @@
             <div class="collapse" id="editors">
               <ul class="navbar-nav ps-3">
                 <li>
-                  <a href="#" class="nav-link px-3">
+                  <a href="journalist.html#chief_editor" class="nav-link px-3">
                     <span class="me-2"><i class="bi bi-person-lines-fill"></i></i></span>
                     <span>Chief Editor</span>
                   </a>
                 </li>
                 <li>
-                  <a href="./journalist.html" class="nav-link px-3">
+                  <a href="./journalist.html#journalists" class="nav-link px-3">
                     <span class="me-2"><i class="bi bi-person-lines-fill"></i></span>
                     <span>Journalists</span>
                   </a>
@@ -129,20 +129,83 @@
   <main class="mt-5 pt-3">
     <div class="container-fluid">
 
-      <div class="col-md-12 my-2" style="display: flex;">
+      <!-- Chief Editor Section -->
+      <div class="col-md-12 my-2" id="chief_editor">
+        <h4>Chief Editor </h4>
+        <hr>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseChiefEdior" aria-expanded="false" aria-controls="collapseChiefEdior">
+              Chief Editor #0
+            </button>
+          </h2>
+          <div id="collapseChiefEdior" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="">
+                <h6>
+                  <p>
+                    Name : Chief Editor #0 <br>
+                    Email : example@mail.com <br>
+                    Password : xxxxxxxx <br>
+
+                    <button class="btn btn-outline-dark ms-auto mt-2" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseChiefEdiorEdit" aria-expanded="true"
+                      aria-controls="collapseChiefEdiorEdit">
+                      <i class="bi bi-pencil-square"></i></i> Edit Details
+                    </button>
+
+                  </p>
+                </h6>
+              </div>
+              <div id="collapseChiefEdiorEdit" class="accordion-collapse collapse"
+                aria-labelledby="headingChiefEditorEdit">
+                <div class="accordion-body">
+                  <div class="form-floating mb-1">
+                    <input type="name" class="form-control" id="floatingName" placeholder="Name">
+                    <label for="floatingName">Name</label>
+                  </div>
+                  <div class="form-floating mb-1">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating mb-2">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Confirm Password</label>
+                  </div>
+
+                  <button type="button" class="btn btn-dark mt-2">Submit</button>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Journalist Section -->
+      <div class="col-md-12 my-2 mt-4" style="display: flex;" id="journalists">
         <h4>Journalists </h4>
         <button class="btn btn-light ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZero"
           aria-expanded="true" aria-controls="collapseZero">
           <i class="bi bi-person-fill-add"></i> Add New
         </button>
       </div>
+
+      <!-- Defination of Add New Button  -->
       <div class="accordion-item mb-3">
         <div id="collapseZero" class="accordion-collapse collapse" aria-labelledby="headingZero"
           data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            
+
             <h5 class="accordion-header mb-1" id="headingTwo">
-              Info of New Journalist 
+              Info of New Journalist
             </h5>
             <div class="form-floating mb-1">
               <input type="name" class="form-control" id="floatingName" placeholder="Name">
@@ -156,9 +219,11 @@
               <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
               <label for="floatingPassword">Password</label>
             </div>
-            <button type="button" class="btn btn-dark mt-2">Submit</button>
-          
-          
+            <div class="d-flex justify-content-end">
+              <button type="button" class="btn btn-dark mt-2">Submit</button>
+              <button type="button" class="btn btn-outline-danger ms-auto mt-2 ">Clear</button>
+            </div>
+
           </div>
         </div>
       </div>
@@ -168,7 +233,9 @@
         </div>
        -->
 
+
       <div class="accordion" id="accordionExample">
+        <!-- 1st accordion  -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -179,18 +246,51 @@
           <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingTwo"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <div class="form-floating mb-2">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
+              <div class="">
+                <h6>
+                  <p>
+                    Name : Journalist #1 <br>
+                    Email : example@mail.com <br>
+                    Password : xxxxxxxx <br>
+
+                    <button class="btn btn-outline-dark ms-auto mt-2" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOneEdit" aria-expanded="true" aria-controls="collapseOneEdit">
+                      <i class="bi bi-pencil-square"></i></i> Edit Details
+                    </button>
+                    <button type="button" class="btn btn-outline-danger ms-auto mt-2 ">
+                      <i class="bi bi-trash3"></i> Delete User</button>
+                  </p>
+                </h6>
               </div>
-              <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Confirm Password</label>
+              <div id="collapseOneEdit" class="accordion-collapse collapse" aria-labelledby="headingOneEdit">
+                <div class="accordion-body">
+                  <div class="form-floating mb-1">
+                    <input type="name" class="form-control" id="floatingName" placeholder="Name">
+                    <label for="floatingName">Name</label>
+                  </div>
+                  <div class="form-floating mb-1">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating mb-2">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Confirm Password</label>
+                  </div>
+
+                  <button type="button" class="btn btn-dark mt-2">Submit</button>
+
+
+                </div>
               </div>
-              <button type="button" class="btn btn-dark mt-2">Submit</button>
             </div>
           </div>
         </div>
+
+        <!-- 2nd accordion -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -198,21 +298,56 @@
               Journalist #2
             </button>
           </h2>
+
+
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <div class="form-floating mb-2">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
+              <div class="">
+                <h6>
+                  <p>
+                    Name : Journalist #2 <br>
+                    Email : example@mail.com <br>
+                    Password : xxxxxxxx <br>
+
+                    <button class="btn btn-outline-dark ms-auto mt-2" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwoEdit" aria-expanded="true" aria-controls="collapseTwoEdit">
+                      <i class="bi bi-pencil-square"></i> Edit Details
+                    </button>
+                    <button type="button" class="btn btn-outline-danger ms-auto mt-2 ">
+                      <i class="bi bi-trash3"></i> Delete User</button>
+                  </p>
+                </h6>
               </div>
-              <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Confirm Password</label>
+              <div id="collapseTwoEdit" class="accordion-collapse collapse" aria-labelledby="headingTwoEdit">
+                <div class="accordion-body">
+                  <div class="form-floating mb-1">
+                    <input type="name" class="form-control" id="floatingName" placeholder="Name">
+                    <label for="floatingName">Name</label>
+                  </div>
+                  <div class="form-floating mb-1">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating mb-2">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Confirm Password</label>
+                  </div>
+
+                  <button type="button" class="btn btn-dark mt-2">Submit</button>
+
+
+                </div>
               </div>
-              <button type="button" class="btn btn-dark mt-2">Submit</button>
             </div>
           </div>
         </div>
+
+        <!-- 3rd accordion -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -223,15 +358,46 @@
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <div class="form-floating mb-2">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
+              <div class="">
+                <h6>
+                  <p>
+                    Name : Journalist #3 <br>
+                    Email : example@mail.com <br>
+                    Password : xxxxxxxx <br>
+
+                    <button class="btn btn-outline-dark ms-auto mt-2" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThreeEdit" aria-expanded="true" aria-controls="collapseThreeEdit">
+                      <i class="bi bi-pencil-square"></i> Edit Details
+                    </button>
+                    <button type="button" class="btn btn-outline-danger ms-auto mt-2 ">
+                      <i class="bi bi-trash3"></i> Delete User</button>
+                  </p>
+                </h6>
               </div>
-              <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Confirm Password</label>
+              <div id="collapseThreeEdit" class="accordion-collapse collapse" aria-labelledby="headingThreeEdit">
+                <div class="accordion-body">
+                  <div class="form-floating mb-1">
+                    <input type="name" class="form-control" id="floatingName" placeholder="Name">
+                    <label for="floatingName">Name</label>
+                  </div>
+                  <div class="form-floating mb-1">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating mb-2">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Confirm Password</label>
+                  </div>
+
+                  <button type="button" class="btn btn-dark mt-2">Submit</button>
+
+
+                </div>
               </div>
-              <button type="button" class="btn btn-dark mt-2">Submit</button>
             </div>
           </div>
         </div>
