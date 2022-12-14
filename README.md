@@ -1,2 +1,0 @@
-# news
-Online News Portal
